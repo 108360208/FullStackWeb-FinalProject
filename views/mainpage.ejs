@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie-edge">
+        <!-- <link rel="stylesheet" href="change.css"> -->
+        <link rel="stylesheet" href="/stylesheets/mainpage_style.css" />
+        <title>Let's Play</title>
+    </head>
+
+    <body>
+
+      <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <p id="navbar__logo">GAME</p> 
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="navbar__menu">
+
+          <li class="navbar__item">
+            <form action="/ranking/1" method="get" class="navbar__item">
+              <button type="submit" class="navbar__links" id="about-page">Rank 1</button>
+            </form>
+          </li>
+
+          <li class="navbar__item">
+            <form action="/ranking/2" method="GET" class="navbar__item">
+              <button type="submit" class="navbar__links" id="services-page">Rank 2</button>
+            </form>
+
+          </li>
+
+          <li class="navbar__btn">
+
+            <form action="/logout" method="GET" class="navbar__btn">
+                <button type="submit" class="button" id="signup">Log Out</button>
+            </form>
+            <!-- <a href="#sign-up" class="button" id="signup">Log Out</a> -->
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+
+      <!-- Services Section -->
+  <!--   <script src="change.js"></script> -->
+    <div class="services" id="services">
+
+      <h1>Welcome <span id="username"><%= name %></span></h1>
+      <script>
+        if(typeof(Storage)!=="undefined") 
+          {
+          localStorage.lastname=document.getElementById("username").innerText;
+          document.getElementById("notes").innerHTML="Last name: " + localStorage.lastname.toString();
+          }
+        else
+          {
+          document.getElementById("notes").innerHTML="Sorry, your browser does not support web storage...";
+          }
+        </script>
+      <div class="services__wrapper">
+
+        <div class="services__card"> 
+        </div>
+
+        <div class="services__card">
+          <h2 class="g1">WACK-A-MOLE</h2>
+          <img src="/images/mainpage/wackamole.png">
+          <form action="/game/1"  method="GET" class="services__btn">
+            <button type="submit">Get Started</button>
+          </form>
+        </div>
+
+        <div class="services__card">
+          <h2 class="g2">SNAKE</h2>
+          <img src="/images/mainpage/snake.png">
+          <form action="/game/2"  method="GET" class="services__btn">
+            <button type="submit">Get Started</button>
+          </form>
+        </div>
+        <div class="services__card">
+        </div>
+
+      </div>
+
+    </div>
+
+    </body>
+
+</html>

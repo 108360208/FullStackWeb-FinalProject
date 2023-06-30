@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Rank 1</title>
+ <link rel="stylesheet" href="/stylesheets/styles.css" media="all">
+</head>
+<body>
+
+<div class="wrapper">
+ <div class="lboard_section">
+  <div class="lboard_tabs">
+   <div class="tabs">
+    <ul>
+     <li data-li="today">貪食蛇排行榜</li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="lboard_wrap">
+   <div class="lboard_item today" style="display: block;">
+    <div class="lboard_mem">
+     <div class="img">
+      <img src="/images/leaderboard/pic_1.png" alt="picture_1">
+     </div>
+     <div class="name_bar">
+      <p><span>1.</span> <%=name%></p> 
+      <div class="bar_wrap">
+       <div class="inner_bar" style="width: 95%"></div>
+      </div>
+     </div>
+     <div class="points">
+      <%=scores%>
+     </div>
+    </div>
+    <div class="lboard_mem">
+     <div class="img">
+      <img src="/images/leaderboard/pic_2.png" alt="picture_2">
+     </div>
+     <div class="name_bar">
+      <p><span>2.</span><%=name1%></p>
+      <div class="bar_wrap">
+       <div class="inner_bar" style="width: 80%"></div>
+      </div>
+     </div>
+     <div class="points">
+      <%=scores1%>
+     </div>
+    </div>
+    <div class="lboard_mem">
+     <div class="img">
+      <img src="/images/leaderboard/pic_3.png" alt="picture_2">
+     </div>
+     <div class="name_bar">
+      <p><span>3.</span><%=name2%></p>
+      <div class="bar_wrap">
+       <div class="inner_bar" style="width: 60%;"></div>
+      </div>
+     </div>
+     <div class="points">
+      <%=scores2%>
+     </div>
+    </div>
+    <div class="lboard_mem">
+     <div class="img">
+      <img src="/images/leaderboard/pic_4.png" alt="picture_1">
+     </div>
+     <div class="name_bar">
+      <p><span>4.</span><%=name3%></p>
+      <div class="bar_wrap">
+       <div class="inner_bar" style="width: 30%"></div>
+      </div>
+     </div>
+     <div class="points">
+      <%=scores3%>
+     </div>
+    </div>
+    <div class="lboard_mem">
+     <div class="img">
+      <img src="/images/leaderboard/pic_5.png" alt="picture_2">
+     </div>
+     <div class="name_bar">
+      <p><span>5.</span><%=name4%></p>
+      <div class="bar_wrap">
+       <div class="inner_bar" style="width: 10%"></div>
+      </div>
+     </div>
+     <div class="points">
+      <%=scores4%>
+     </div>
+    </div>
+   </div>
+            <button class="main__btn" onclick="history.back()"><p>回到主頁</p></button>
+  </div>
+ </div>
+</div> 
+<!-- <input type="button" onclick="history.back()" value="回到主頁"></input> -->
+
+</body>
+</html>
